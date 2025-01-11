@@ -11,6 +11,18 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      backgroundImage: {
+        'gradient-border': 'linear-gradient(45deg, #ef4444, #1d4ed8)',
+      },
+      animation: {
+        scale: 'scale 0.9s ease-in-out infinite',
+      },
+      keyframes: {
+        scale: {
+          '0%, 40%, 100%': { transform: 'scaleY(0.05)' },
+          '20%': { transform: 'scaleY(1)' },
+        },
+      },
     },
   },
   plugins: [],
