@@ -1,8 +1,11 @@
 import React from 'react'
 import { CiSearch } from "react-icons/ci";
+import { FaCartPlus } from "react-icons/fa";
+
+
 export default function Navbar() {
   return (
-  <div className='bg-black'>
+  <div className='bg-black absolute w-[100%] top-0 z-50'>
       <div className='p-4 flex justify-between text-white items-center  shadow-sm lg:w-[80%] gap-5 mx-auto'>
       <div className="text-sm text-pink-200">
         <div className="flex items-center">
@@ -18,6 +21,7 @@ export default function Navbar() {
         <a href="#">About</a>
         <a href="./Services">Services</a>
         <a href="#">Contact Us</a>
+        <button className='text-lg'><FaCartPlus/></button>
       </div>
     </div>
   </div>
